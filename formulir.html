@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Saver - Pusat Shelter Hewan Indonesia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adopt.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-left">
+        <a href="Kontak.html">Contact</a>
+      </div>
+      <div class="top-right">
+        <a href="https://www.facebook.com/profile.php?id=61577318411619"
+          ><img src="images/fb.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/petsaverss"
+          ><img src="images/ig.png" alt="Instagram"
+        /></a>
+      </div>
+    </div>
+
+    <!-- Tombol hamburger di luar header -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+    <header>
+      <!-- Sidebar Slide Menu -->
+      <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <a href="index.html">Home</a>
+        <a href="VisidanMisi.html">Visi dan Misi</a>
+        <a href="Pengembang.html">Pengembang</a>
+        <a href="Kontak.html">Kontak</a>
+        <a href="lokasi-shelter.html">Lokasi Shelter</a>
+        <a href="anjing.html">Adopsi Anjing</a>
+        <a href="kucing.html">Adopsi Kucing</a>
+        <a href="donasi.html">Donasi</a>
+      </div>
+
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/transputih.png" alt="Logo" />
+          <span class="brand-text">Pet Saver</span>
+        </div>
+
+        <nav class="nav-desktop">
+          <!-- Home -->
+          <div class="dropdown">
+            <a href="index.html">Home</a>
+          </div>
+
+          <!-- Adopt -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Adopt ▾</a>
+            <div class="dropdown-menu">
+              <a href="anjing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Anjing
+              </a>
+              <a href="kucing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kucing
+              </a>
+            </div>
+          </div>
+
+          <!-- Explore -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Explore ▾</a>
+            <div class="dropdown-menu">
+              <a href="lokasi-shelter.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Lokasi Shelter
+              </a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About ▾</a>
+            <div class="dropdown-menu">
+              <a href="VisidanMisi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Visi dan Misi
+              </a>
+              <a href="Pengembang.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Pengembang
+              </a>
+              <a href="Kontak.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kontak
+              </a>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Support ▾</a>
+            <div class="dropdown-menu">
+              <a href="donasi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Donasi
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Syarat dan Ketentuan</h1>
+      <h2><strong>Syarat untuk menjadi adopter:</strong></h2>
+      <ol>
+        <li>
+          Bekerja sama dengan kami mulai dari awal proses tanya jawab,
+          melengkapi dokumen dan persyaratan, hingga seterusnya demi kebaikan
+          hewan adopsi.
+        </li>
+        <li>
+          Menandatangani
+          <a
+            href="https://drive.google.com/file/d/1lxRfp_MM7PpaVy_vZT0bIrM7cUWF0Vf6/view?usp=sharing"
+            ><strong>Perjanjian Adopsi Pet Saver</strong></a
+          >
+          sebelum atau saat menjemput kucingnya.
+        </li>
+        <li>
+          Menerima hewannya dalam kondisi apapun mengingat hewan yang diadopsi
+          adalah hewan jalanan.
+        </li>
+        <li>Mensteril dan memvaksinasi hewan yang diadopsi.</li>
+        <li>
+          Menjemput langsung hewannya di dokter hewan setelah pemeriksaan awal.
+        </li>
+        <li>
+          Bertanggung jawab penuh atas kehidupan dan kebutuhan hewan adopsi
+          hingga akhir hayatnya.
+        </li>
+        <li>
+          Tidak akan dikonsumsi, digunakan sebagai pakan dan/atau
+          dikembangbiakkan.
+        </li>
+        <li>
+          Dipelihara di dalam lingkungan semi outdoor dan pengawasan, namun
+          diutamakan fully indoor.
+        </li>
+        <li>
+          Jika dikandangkan, wajib memberikan kesempatan berjalan-jalan di dalam
+          rumah selama beberapa jam setiap harinya.
+        </li>
+        <li>
+          Mampu dan bersedia membawa ke dokter hewan dan/atau klinik kesehatan
+          hewan jika sakit dan untuk mendapatkan vaksin, obat cacing, obat kutu
+          dan pemeriksaan kesehatan secara berkala sesuai anjuran dokter hewan.
+        </li>
+        <li>
+          Menyetujui kesepakatan sterilisasi sesuai jadwal dan tempat yang
+          disepakati, jika hewan belum disteril saat diadopsi.
+        </li>
+        <li>
+          Memiliki perlengkapan pemeliharaan dan kebutuhan harian seperti
+          dijelaskan.
+        </li>
+      </ol>
+      <h2><strong> Ketentuan untuk menjadi adopter: </strong></h2>
+      <ol>
+        <li>
+          <strong>WAJIB</strong> membaca dan melengkapi
+          <a href="https://forms.gle/2ZZ2UKZxQ2ZK1QE4A"
+            ><strong>Formulir Perjanjian Adopsi</strong></a
+          >
+          dengan lengkap, akurat dan sebenar-benarnya, serta mematuhi isi
+          formulir sebagai hukum yang mengikat bagi para pihak.
+        </li>
+        <li>
+          <strong>WAJIB</strong> mengisi, menandatangani dan mengirimkan
+          Perjanjian Adopsi petsaver.my.id melalui e-mail ke
+          projectpetsaver@gmail.com. Atau, menandatangani saat menjemput hewan
+          adopsi.
+        </li>
+        <li>
+          Jika calon orang tua asuh berumur di bawah 18 tahun, masih sekolah
+          dan/atau belum berpenghasilan tetap, maka
+          <strong>Perjanjian Adopsi petsaver.my.id WAJIB</strong> ditandatangani
+          oleh wali dari calon orang tua asuh untuk memastikan agar hewan adopsi
+          diterima sepenuhnya dan akan dipelihara bersama-sama keluarga calon
+          orang tua asuh.
+        </li>
+        <li>
+          Jika calon orang tua asuh tinggal di rumah kontrakan atau kos-kosan
+          bersama dengan penghuni lain, maka
+          <strong>Perjanjian Adopsi petsaver.my.id WAJIB</strong>
+          ditandatangani oleh pemilik dan semua penghuni kontrakan atau
+          kos-kosan dari calon orang tua asuh untuk memastikan agar hewan adopsi
+          diterima sepenuhnya dan akan dipelihara bersama-sama keluarga calon
+          orang tua asuh.
+        </li>
+        <li>
+          <strong>WAJIB</strong> memberikan data tambahan jika diperlukan baik
+          melalui telepon, e-mail atau sarana komunikasi lainnya.
+        </li>
+        <li>
+          <strong>WAJIB</strong> mengizinkan kami untuk melakukan survei
+          terhadap lingkungan rumah dan calon keluarga angkat.
+        </li>
+        <li>
+          <strong>WAJIB</strong> mengirimkan video yang memperlihatkan
+          lingkungan rumah dan calon keluarga angkat, jika survei langsung tidak
+          dapat dilakukan, melalui e-mail info@catrescue.id.
+        </li>
+        <li>
+          Diberikan masa percobaan selama 2 (dua) minggu untuk beradaptasi
+          dengan hewan adopsi dan apabila terjadi ketidakcocokan
+          <strong>WAJIB</strong> segera melaporkan melalui e-mail
+          projectpetsaver@gmail.com untuk bersama-sama mencari solusi yang
+          terbaik.
+        </li>
+        <li>
+          <strong>WAJIB</strong> mengizinkan kami untuk sewaktu-waktu
+          mengunjungi hewan adopsi untuk memantau perkembangannya, meminta atau
+          mengambil foto hewan adopsi untuk dipublikasikan.
+        </li>
+        <li>
+          Jika saat kunjungan kami menemukan hewan adopsi dalam kondisi yang
+          tidak sepatutnya misalnya tidak terawat, sakit parah yang tidak
+          ditindaklanjuti, menderita luka serius akibat perbuatan manusia atau
+          jika kondisinya tidak memungkinkan untuk meneruskan adopsi, maka hewan
+          adopsi <strong>WAJIB</strong> dikembalikan.
+        </li>
+        <li>
+          <strong>WAJIB</strong> bekerja sama untuk bermusyawarah mencari solusi
+          yang terbaik bagi hewan adopsi, dan mengganti biaya yang dikeluarkan
+          untuk menyembuhkan hewan adopsi jika: Hewan adopsi dibuang, diabaikan
+          atau dikembalikan tanpa pemberitahuan, Kesepakatan dan tanggung jawab
+          perawatan hewan jika sakit diabaikan, Hewan adopsi membutuhkan
+          perawatan akibat kelalaian dan kekejaman.
+        </li>
+        <li>
+          Jika tidak menunjukkan itikad baik untuk bekerja sama atau mempersulit
+          upaya komunikasi, maka kami berhak melaporkan kepada pihak yang
+          berwenang untuk meminta pertanggungjawaban sebagai orang tua asuh.
+          Alasan-alasan kepentingan pribadi tanpa mempertimbangkan kesejahteraan
+          dan masa depan hewan adopsi tidak dapat dibenarkan dan dapat dianggap
+          sebagai kekejaman terhadap hewan (animal cruelty).
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="/images/trans putih.png" alt="Pet Saver Logo" />
+    </div>
+
+    <div class="footer-contact-group">
+      <div class="footer-contact-box">
+        <h4>Mailing Address</h4>
+        <p>
+          Jl. dr Soetomo<br />
+          Ds. Karangharjo, Kec. Glenmore<br />Kab. Banyuwangi, Jawa Timur 68466
+        </p>
+      </div>
+      <div class="footer-contact-box">
+        <h4>Email</h4>
+        <p>projectpetsaver@gmail.com</p>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/profile.php?id=61577318411619"
+            target="_blank"
+          >
+            <img src="images/fb.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/petsaverss" target="_blank">
+            <img src="images/ig.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© Pet Saver. All Rights Reserved. 2025.</div>
+  </div>
+</footer>

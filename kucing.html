@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pusat Shelter Hewan Indonesia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adopt.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Tombol hamburger di luar header -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+    <header>
+      <!-- Sidebar Slide Menu -->
+      <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <a href="index.html">Home</a>
+        <a href="VisidanMisi.html">Visi dan Misi</a>
+        <a href="Pengembang.html">Pengembang</a>
+        <a href="Kontak.html">Kontak</a>
+        <a href="lokasi-shelter.html">Lokasi Shelter</a>
+        <a href="anjing.html">Adopsi Anjing</a>
+        <a href="kucing.html">Adopsi Kucing</a>
+        <a href="donasi.html">Donasi</a>
+      </div>
+
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/transputih.png" alt="Logo" />
+          <span class="brand-text">Pet Saver</span>
+        </div>
+
+        <nav class="nav-desktop">
+          <!-- Home -->
+          <div class="dropdown">
+            <a href="index.html">Home</a>
+          </div>
+
+          <!-- Adopt -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Adopt ▾</a>
+            <div class="dropdown-menu">
+              <a href="anjing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Anjing
+              </a>
+              <a href="kucing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kucing
+              </a>
+            </div>
+          </div>
+
+          <!-- Explore -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Explore ▾</a>
+            <div class="dropdown-menu">
+              <a href="lokasi-shelter.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Lokasi Shelter
+              </a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About ▾</a>
+            <div class="dropdown-menu">
+              <a href="VisidanMisi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Visi dan Misi
+              </a>
+              <a href="Pengembang.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Pengembang
+              </a>
+              <a href="Kontak.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kontak
+              </a>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Support ▾</a>
+            <div class="dropdown-menu">
+              <a href="donasi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Donasi
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <!-- Sidebar Kiri -->
+      <aside class="sidebar">
+        <h3>Dukung Shelter Kami!</h3>
+        <img src="images/donasikak.jpg" alt="Donasi" class="donasi-img" />
+        <p>Bantu kami menyelamatkan lebih banyak hewan dengan berdonasi!</p>
+        <button class="donate-btn" onclick="location.href='donasi.html'">
+          Donasi
+        </button>
+      </aside>
+
+      <!-- Konten Daftar Anjing -->
+      <section class="cat-list">
+        <div class="cat-card">
+          <img src="images/Kucing/Haho.jpg" alt="Kucing 1" />
+          <h4>Haho</h4>
+          <p>Kucing - Persia</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="cat-card">
+          <img src="images/Kucing/Quinie.jpg" alt="Kucing 2" />
+          <h4>Quinie</h4>
+          <p>Kucing - Maine Coon</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="cat-card">
+          <img src="images/Kucing/Bitak.jpg" alt="Kucing 3" />
+          <h4>Bitak</h4>
+          <p>Kucing - Siamese</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="cat-card">
+          <img src="images/Kucing/Sawi.jpg" alt="Kucing 4" />
+          <h4>Sawi</h4>
+          <p>Kucing - Domestic Short Hair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="cat-card">
+          <img src="images/Kucing/5.jpg" alt="Kucing 5" />
+          <h4>Oreo</h4>
+          <p>Kucing - British Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/6.jpg" alt="Kucing 6" />
+          <h4>Whiskers</h4>
+          <p>Kucing - Ragdoll</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/7.jpg" alt="Kucing 7" />
+          <h4>Mittens</h4>
+          <p>Kucing - Sphynx</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/8.jpg" alt="Kucing 8" />
+          <h4>Simba</h4>
+          <p>Kucing - Abyssinian</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/9.jpg" alt="Kucing 9" />
+          <h4>Nala</h4>
+          <p>Kucing - Bengal</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/10.jpg" alt="Kucing 10" />
+          <h4>Gizmo</h4>
+          <p>Kucing - Russian Blue</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/11.jpg" alt="Kucing 11" />
+          <h4>Cleo</h4>
+          <p>Kucing - Scottish Fold</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/12.jpg" alt="Kucing 12" />
+          <h4>Jasper</h4>
+          <p>Kucing - Burmese</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/13.jpg" alt="Kucing 13" />
+          <h4>Luna</h4>
+          <p>Kucing - American Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/14.jpg" alt="Kucing 14" />
+          <h4>Milo</h4>
+          <p>Kucing - Devon Rex</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/15.jpg" alt="Kucing 15" />
+          <h4>Daisy</h4>
+          <p>Kucing - Oriental Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/16.jpg" alt="Kucing 16" />
+          <h4>Leo</h4>
+          <p>Kucing - Siberian</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/17.jpg" alt="Kucing 17" />
+          <h4>Pippin</h4>
+          <p>Kucing - Himalayan</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/18.jpg" alt="Kucing 18" />
+          <h4>Shadow</h4>
+          <p>Kucing - Birman</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/19.jpg" alt="Kucing 19" />
+          <h4>Smokey</h4>
+          <p>Kucing - Chartreux</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/20.jpg" alt="Kucing 20" />
+          <h4>Willow</h4>
+          <p>Kucing - Cornish Rex</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/21.jpg" alt="Kucing 21" />
+          <h4>Rocky</h4>
+          <p>Kucing - Egyptian Mau</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/22.jpg" alt="Kucing 22" />
+          <h4>Sophie</h4>
+          <p>Kucing - Exotic Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/23.jpg" alt="Kucing 23" />
+          <h4>Tiger</h4>
+          <p>Kucing - Havana Brown</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/24.jpg" alt="Kucing 24" />
+          <h4>Hazel</h4>
+          <p>Kucing - Japanese Bobtail</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/25.jpg" alt="Kucing 25" />
+          <h4>Midnight</h4>
+          <p>Kucing - Korat</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/26.jpg" alt="Kucing 26" />
+          <h4>Panda</h4>
+          <p>Kucing - LaPerm</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/27.webp" alt="Kucing 27" />
+          <h4>Sunny</h4>
+          <p>Kucing - Munchkin</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/28.jpg" alt="Kucing 28" />
+          <h4>Coco</h4>
+          <p>Kucing - Norwegian Forest Cat</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/29.jpg" alt="Kucing 29" />
+          <h4>Oliver</h4>
+          <p>Kucing - Ocicat</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/30.jpg" alt="Kucing 30" />
+          <h4>Rosie</h4>
+          <p>Kucing - Pixie-Bob</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/31.jpg" alt="Kucing 31" />
+          <h4>Sammy</h4>
+          <p>Kucing - Ragamuffin</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/32.jpg" alt="Kucing 32" />
+          <h4>Bella</h4>
+          <p>Kucing - Savannah</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/33.jpg" alt="Kucing 33" />
+          <h4>Max</h4>
+          <p>Kucing - Selkirk Rex</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/34.jpg" alt="Kucing 34" />
+          <h4>Chloe</h4>
+          <p>Kucing - Singapura</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/35.jpg" alt="Kucing 35" />
+          <h4>Charlie</h4>
+          <p>Kucing - Somali</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/36.jpg" alt="Kucing 36" />
+          <h4>Lucy</h4>
+          <p>Kucing - Tonkinese</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/37.jpg" alt="Kucing 37" />
+          <h4>Oscar</h4>
+          <p>Kucing - Turkish Angora</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/38.jpg" alt="Kucing 38" />
+          <h4>Daisy</h4>
+          <p>Kucing - Turkish Van</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/39.jpg" alt="Kucing 39" />
+          <h4>Bella</h4>
+          <p>Kucing - American Curl</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/40.jpg" alt="Kucing 40" />
+          <h4>Buddy</h4>
+          <p>Kucing - Balinese</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/41.jpg" alt="Kucing 41" />
+          <h4>Jasper</h4>
+          <p>Kucing - Bombay</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/42.jpg" alt="Kucing 42" />
+          <h4>Lily</h4>
+          <p>Kucing - Chantilly-Tiffany</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/43.jpg" alt="Kucing 43" />
+          <h4>Finn</h4>
+          <p>Kucing - Colorpoint Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/44.jpg" alt="Kucing 44" />
+          <h4>Coco</h4>
+          <p>Kucing - Cymric</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/45.jpg" alt="Kucing 45" />
+          <h4>Leo</h4>
+          <p>Kucing - Egyptian Mau</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/46.jpg" alt="Kucing 46" />
+          <h4>Piper</h4>
+          <p>Kucing - European Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/47.jpg" alt="Kucing 47" />
+          <h4>Ruby</h4>
+          <p>Kucing - Exotic Shorthair</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/48.jpg" alt="Kucing 48" />
+          <h4>Milo</h4>
+          <p>Kucing - German Rex</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/49.jpg" alt="Kucing 49" />
+          <h4>Ziggy</h4>
+          <p>Kucing - Javanese</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="cat-card">
+          <img src="images/Kucing/50.jpg" alt="Kucing 50" />
+          <h4>Apollo</h4>
+          <p>Kucing - Khao Manee</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/trans putih.png" alt="Pet Saver Logo" />
+        </div>
+
+        <div class="footer-contact-group">
+          <div class="footer-contact-box">
+            <h4>Mailing Address</h4>
+            <p>
+              Jl. dr Soetomo<br />
+              Ds. Karangharjo, Kec. Glenmore<br />Kab. Banyuwangi, Jawa Timur
+              68466
+            </p>
+          </div>
+          <div class="footer-contact-box">
+            <h4>Email</h4>
+            <p>projectpetsaver@gmail.com</p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=61577318411619"
+                target="_blank"
+              >
+                <img src="images/fb.png" alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/petsaverss" target="_blank">
+                <img src="images/ig.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© Pet Saver. All Rights Reserved. 2025.</div>
+      </div>
+    </footer>
+  </body>
+</html>

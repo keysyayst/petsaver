@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Saver - Pusat Shelter Hewan Indonesia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adopt.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Tombol hamburger di luar header -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+    <header>
+      <!-- Sidebar Slide Menu -->
+      <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <a href="index.html">Home</a>
+        <a href="VisidanMisi.html">Visi dan Misi</a>
+        <a href="Pengembang.html">Pengembang</a>
+        <a href="Kontak.html">Kontak</a>
+        <a href="lokasi-shelter.html">Lokasi Shelter</a>
+        <a href="anjing.html">Adopsi Anjing</a>
+        <a href="kucing.html">Adopsi Kucing</a>
+        <a href="donasi.html">Donasi</a>
+      </div>
+
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/transputih.png" alt="Logo" />
+          <span class="brand-text">Pet Saver</span>
+        </div>
+
+        <nav class="nav-desktop">
+          <!-- Home -->
+          <div class="dropdown">
+            <a href="index.html">Home</a>
+          </div>
+
+          <!-- Adopt -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Adopt ▾</a>
+            <div class="dropdown-menu">
+              <a href="anjing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Anjing
+              </a>
+              <a href="kucing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kucing
+              </a>
+            </div>
+          </div>
+
+          <!-- Explore -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Explore ▾</a>
+            <div class="dropdown-menu">
+              <a href="lokasi-shelter.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Lokasi Shelter
+              </a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About ▾</a>
+            <div class="dropdown-menu">
+              <a href="VisidanMisi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Visi dan Misi
+              </a>
+              <a href="Pengembang.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Pengembang
+              </a>
+              <a href="Kontak.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kontak
+              </a>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Support ▾</a>
+            <div class="dropdown-menu">
+              <a href="donasi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Donasi
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <!-- Sidebar Kiri -->
+      <aside class="sidebar">
+        <h3>Dukung Shelter Kami!</h3>
+        <img src="images/donasikak2.png" alt="Donasi" class="donasi-img" />
+        <p>Bantu kami menyelamatkan lebih banyak hewan dengan berdonasi!</p>
+        <a href="donasi.html">
+          <button class="donate-btn">Donasi Sekarang</button>
+        </a>
+      </aside>
+
+      <!-- Konten Daftar Anjing -->
+      <section class="dog-list">
+        <div class="dog-card">
+          <img src="images/Anjing/Chocolate.jpeg" alt="Anjing 1" />
+          <h4>Chocolate</h4>
+          <p>Anjing - Affenpinscher</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="dog-card">
+          <img src="images/Anjing/Marshmallow.jpeg" alt="Anjing 2" />
+          <h4>Marshmallow</h4>
+          <p>Anjing - Affenpinscher</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="dog-card">
+          <img src="images/Anjing/Pancho.jpg" alt="Anjing 3" />
+          <h4>Pancho</h4>
+          <p>Anjing - Labrador Retriever</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="dog-card">
+          <img src="images/Anjing/Gordo.jpg" alt="Anjing 4" />
+          <h4>Jonie</h4>
+          <p>Anjing - Labrador Retriever</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+
+        <div class="dog-card">
+          <img src="images/Anjing/dog_5.jpg" alt="Anjing 5" />
+          <h4>Buddy</h4>
+          <p>Anjing - Golden Retriever</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_6.jpg" alt="Anjing 6" />
+          <h4>Daisy</h4>
+          <p>Anjing - Beagle</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_7.jpg" alt="Anjing 7" />
+          <h4>Max</h4>
+          <p>Anjing - German Shepherd</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_8.webp" alt="Anjing 8" />
+          <h4>Bella</h4>
+          <p>Anjing - Poodle</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_9.jpg" alt="Anjing 9" />
+          <h4>Charlie</h4>
+          <p>Anjing - Bulldog</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_10.jpg" alt="Anjing 10" />
+          <h4>Lucy</h4>
+          <p>Anjing - Yorkshire Terrier</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_11.jpg" alt="Anjing 11" />
+          <h4>Rocky</h4>
+          <p>Anjing - Rottweiler</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_12.jpg" alt="Anjing 12" />
+          <h4>Luna</h4>
+          <p>Anjing - Boxer</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_13.jpg" alt="Anjing 13" />
+          <h4>Cooper</h4>
+          <p>Anjing - Siberian Husky</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_14.jpg" alt="Anjing 14" />
+          <h4>Mia</h4>
+          <p>Anjing - Dachshund</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_15.jpg" alt="Anjing 15" />
+          <h4>Leo</h4>
+          <p>Anjing - Shih Tzu</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_16.jpg" alt="Anjing 16" />
+          <h4>Zoe</h4>
+          <p>Anjing - Doberman Pinscher</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_17.webp" alt="Anjing 17" />
+          <h4>Milo</h4>
+          <p>Anjing - Australian Shepherd</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_18.jpg" alt="Anjing 18" />
+          <h4>Chloe</h4>
+          <p>Anjing - Border Collie</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_19.jpg" alt="Anjing 19" />
+          <h4>Oscar</h4>
+          <p>Anjing - Basset Hound</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_20.jpg" alt="Anjing 20" />
+          <h4>Penny</h4>
+          <p>Anjing - Akita</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_21.jpg" alt="Anjing 21" />
+          <h4>Gus</h4>
+          <p>Anjing - Shiba Inu</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_22.jpg" alt="Anjing 22" />
+          <h4>Ruby</h4>
+          <p>Anjing - Boston Terrier</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_23.jpg" alt="Anjing 23" />
+          <h4>Bentley</h4>
+          <p>Anjing - Pomeranian</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_24.jpg" alt="Anjing 24" />
+          <h4>Hazel</h4>
+          <p>Anjing - Corgi</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_25.jpg" alt="Anjing 25" />
+          <h4>Apollo</h4>
+          <p>Anjing - Great Dane</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_26.jpg" alt="Anjing 26" />
+          <h4>Willow</h4>
+          <p>Anjing - Shetland Sheepdog</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_27.jpg" alt="Anjing 27" />
+          <h4>Duke</h4>
+          <p>Anjing - Bernese Mountain Dog</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_28.jpg" alt="Anjing 28" />
+          <h4>Piper</h4>
+          <p>Anjing - Pug</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_29.jpg" alt="Anjing 29" />
+          <h4>Oliver</h4>
+          <p>Anjing - Maltese</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_30.jpg" alt="Anjing 30" />
+          <h4>Rosie</h4>
+          <p>Anjing - French Bulldog</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_31.jpg" alt="Anjing 31" />
+          <h4>Remi</h4>
+          <p>Anjing - Saint Bernard</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_32.jpg" alt="Anjing 32" />
+          <h4>Sadie</h4>
+          <p>Anjing - Newfoundland</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_33.jpg" alt="Anjing 33" />
+          <h4>Winston</h4>
+          <p>Anjing - Chow Chow</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_34.jpg" alt="Anjing 34" />
+          <h4>Sophie</h4>
+          <p>Anjing - Australian Cattle Dog</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_35.jpg" alt="Anjing 35" />
+          <h4>Zeus</h4>
+          <p>Anjing - Pitbull</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_36.jpg" alt="Anjing 36" />
+          <h4>Stella</h4>
+          <p>Anjing - Pomeranian</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_37.jpg" alt="Anjing 37" />
+          <h4>Koda</h4>
+          <p>Anjing - Alaskan Malamute</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_38.jpg" alt="Anjing 38" />
+          <h4>Layla</h4>
+          <p>Anjing - Cavalier King Charles Spaniel</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_39.avif" alt="Anjing 39" />
+          <h4>Finn</h4>
+          <p>Anjing - English Springer Spaniel</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_40.jpg" alt="Anjing 40" />
+          <h4>Lily</h4>
+          <p>Anjing - Bichon Frise</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_41.jpg" alt="Anjing 41" />
+          <h4>Jax</h4>
+          <p>Anjing - Goldendoodle</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_42.jpg" alt="Anjing 42" />
+          <h4>Dakota</h4>
+          <p>Anjing - Weimaraner</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_43.jpg" alt="Anjing 43" />
+          <h4>Maverick</h4>
+          <p>Anjing - Greyhound</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_44.jpg" alt="Anjing 44" />
+          <h4>Roxy</h4>
+          <p>Anjing - Cane Corso</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_45.jpg" alt="Anjing 45" />
+          <h4>Shadow</h4>
+          <p>Anjing - Newfoundland</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_46.webp" alt="Anjing 46" />
+          <h4>Penny</h4>
+          <p>Anjing - Great Pyrenees</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_47.jpg" alt="Anjing 47" />
+          <h4>Bandit</h4>
+          <p>Anjing - Irish Setter</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_48.avif" alt="Anjing 48" />
+          <h4>Zara</h4>
+          <p>Anjing - Rhodesian Ridgeback</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_49.webp" alt="Anjing 49" />
+          <h4>Blaze</h4>
+          <p>Anjing - Bernese Mountain Dog</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+        <div class="dog-card">
+          <img src="images/Anjing/dog_50.webp" alt="Anjing 50" />
+          <h4>Willow</h4>
+          <p>Anjing - Australian Shepherd</p>
+          <button class="adopt-btn" onclick="location.href='formulir.html'">
+            Adopsi
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/trans putih.png" alt="Pet Saver Logo" />
+        </div>
+
+        <div class="footer-contact-group">
+          <div class="footer-contact-box">
+            <h4>Mailing Address</h4>
+            <p>
+              Jl. dr Soetomo<br />
+              Ds. Karangharjo, Kec. Glenmore<br />Kab. Banyuwangi, Jawa Timur
+              68466
+            </p>
+          </div>
+          <div class="footer-contact-box">
+            <h4>Email</h4>
+            <p>projectpetsaver@gmail.com</p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=61577318411619"
+                target="_blank"
+              >
+                <img src="images/fb.png" alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/petsaverss" target="_blank">
+                <img src="images/ig.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© Pet Saver. All Rights Reserved. 2025.</div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pusat Shelter Hewan Indonesia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Tombol hamburger di luar header -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+    <header>
+      <!-- Sidebar Slide Menu -->
+      <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <a href="index.html">Home</a>
+        <a href="VisidanMisi.html">Visi dan Misi</a>
+        <a href="Pengembang.html">Pengembang</a>
+        <a href="Kontak.html">Kontak</a>
+        <a href="lokasi-shelter.html">Lokasi Shelter</a>
+        <a href="anjing.html">Adopsi Anjing</a>
+        <a href="kucing.html">Adopsi Kucing</a>
+        <a href="donasi.html">Donasi</a>
+      </div>
+
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/transputih.png" alt="Logo" />
+          <span class="brand-text">Pet Saver</span>
+        </div>
+
+        <nav class="nav-desktop">
+          <!-- Home -->
+          <div class="dropdown">
+            <a href="index.html">Home</a>
+          </div>
+
+          <!-- Adopt -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Adopt ▾</a>
+            <div class="dropdown-menu">
+              <a href="anjing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Anjing
+              </a>
+              <a href="kucing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kucing
+              </a>
+            </div>
+          </div>
+
+          <!-- Explore -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Explore ▾</a>
+            <div class="dropdown-menu">
+              <a href="lokasi-shelter.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Lokasi Shelter
+              </a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About ▾</a>
+            <div class="dropdown-menu">
+              <a href="VisidanMisi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Visi dan Misi
+              </a>
+              <a href="Pengembang.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Pengembang
+              </a>
+              <a href="Kontak.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kontak
+              </a>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Support ▾</a>
+            <div class="dropdown-menu">
+              <a href="donasi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Donasi
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="pusat-hewan-section">
+      <div class="container">
+        <div class="left-content">
+          <h1>#Pusat Shelter Hewan di Indonesia</h1>
+        </div>
+        <div class="stats-content">
+          <div class="stat-box">
+            <h2 class="count" data-target="110">0</h2>
+            <p>HEWAN TERDATA</p>
+          </div>
+          <div class="stat-box">
+            <h2 class="count" data-target="30">0</h2>
+            <p>SHELTER TERCATAT</p>
+          </div>
+          <div class="stat-box">
+            <h2 class="count" data-target="140">0</h2>
+            <p>DATA TERKUMPUL</p>
+          </div>
+          <div class="stat-box">
+            <h2 class="count" data-target="5">0</h2>
+            <p>Laporan Adopsi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Temukan Sahabatmu di Pet Saver!</h2>
+      <p>Adopsi hewan peliharaan dari shelter dan ubah hidupmu dan mereka</p>
+    </section>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+      <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+      <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+
+      <div
+        class="slide active"
+        style="background-image: url('images/rescuepict1.webp')"
+      >
+        <div class="hero-overlay">
+          <h1>Beri mereka rumah, bukan sekadar tempat tinggal.</h1>
+          <p>
+            Adopsi hewan peliharaan dari shelter dan ubah hidupmu dan mereka.
+          </p>
+        </div>
+      </div>
+      <div
+        class="slide"
+        style="background-image: url('images/rescuepict2.jpeg')"
+      >
+        <div class="hero-overlay">
+          <h1>Rumah adalah tempat yang hangat untuk semua.</h1>
+          <p>
+            Adopsi hewan peliharaan dari shelter dan berikan mereka kesempatan
+            kedua.
+          </p>
+        </div>
+      </div>
+      <div
+        class="slide"
+        style="background-image: url('images/rescuepict3.jpeg')"
+      >
+        <div class="hero-overlay">
+          <h1>Hewan-hewan di shelter kami menunggu uluran tanganmu.</h1>
+          <p>Adopsi sekarang dan rasakan cinta yang tak terhingga.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO SECTION (DIPINDAH KE SINI) -->
+    <section class="info-section">
+      <a href="kucing.html" class="info-card">
+        <div class="info-content">
+          <img src="images/paw.png" alt="Icon" />
+          <h3>Kucing</h3>
+          <p>50+ Terdata</p>
+        </div>
+      </a>
+      <a href="anjing.html" class="info-card">
+        <div class="info-content">
+          <img src="images/paw.png" alt="Anjing Icon" />
+          <h3>Anjing</h3>
+          <p>50+ Terdata</p>
+        </div>
+      </a>
+      <a href="lokasi-shelter.html" class="info-card">
+        <div class="info-content">
+          <img src="images/paw.png" alt="Shelter Icon" />
+          <h3>Shelter</h3>
+          <p>30+ Terdaftar</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="welcome-section">
+      <div class="welcome-content">
+        <div class="welcome-text">
+          <h3>SELAMAT DATANG</h3>
+          <h2>Pet Saver: Pusat Pengadopsian Hewan Terpercaya</h2>
+          <p>
+            Pet Saver adalah platform nasional terpercaya yang didedikasikan
+            untuk menghubungkan pecinta hewan dengan shelter di seluruh
+            Indonesia. Kami menyajikan data adopsi dan informasi lengkap demi
+            menciptakan masa depan yang lebih baik untuk hewan-hewan terlantar.
+          </p>
+          <p>
+            Dengan berperan sebagai penghubung antara shelter dan adopter, Pet
+            Saver menyediakan wawasan berharga tentang operasi shelter, adopsi,
+            serta kisah inspiratif dari hewan-hewan yang telah menemukan rumah
+            barunya.
+          </p>
+        </div>
+        <div class="welcome-image">
+          <img src="images/rescuepict2.jpeg" alt="Welcome Pet Saver" />
+          <div class="quote-box">
+            <p>
+              "Pet Saver hadir untuk memberikan transparansi dan kepercayaan
+              dalam adopsi hewan peliharaan di Indonesia. Bergabunglah dan
+              jadilah bagian dari perubahan besar ini!"
+            </p>
+            <span>– Keysya, Founder Pet Saver</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shelter-reason">
+      <h2>Kenapa harus adopsi dari shelter?</h2>
+      <div class="reason-cards">
+        <div class="reason-card">
+          <img src="images/kucingwhy.webp" alt="Cat Shelter" />
+          <div class="card-overlay">
+            <img src="images/paw.png" alt="Icon" class="icon" />
+            <p class="info-text">
+              Memberikan kesempatan kedua untuk kucing terlantar.
+            </p>
+          </div>
+        </div>
+
+        <div class="reason-card">
+          <img src="images/anjingwhy.jpeg" alt="Dog Shelter" />
+          <div class="card-overlay">
+            <img src="images/paw.png" alt="Icon" class="icon" />
+            <p class="info-text">
+              Anjing shelter biasanya lebih loyal dan terlatih.
+            </p>
+          </div>
+        </div>
+
+        <div class="reason-card">
+          <img src="images/shelterwhy.png" alt="Shelter" />
+          <div class="card-overlay">
+            <img src="images/paw.png" alt="Icon" class="icon" />
+            <p class="info-text">
+              Mendukung shelter berarti membantu menyelamatkan lebih banyak
+              hewan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goal-section">
+      <div class="goal-container">
+        <div class="goal-image">
+          <img src="images/mimop.jpg" alt="Adopter and shelter pets" />
+        </div>
+        <div class="goal-text">
+          <h2>Tujuan Kami</h2>
+          <p>
+            Pet Saver hadir untuk menjembatani pecinta hewan dan shelter di
+            seluruh nusantara. Dengan platform ini, kami mendorong keterlibatan
+            aktif dari setiap shelter agar data adopsi bisa diakses, dipercaya,
+            dan digunakan untuk menciptakan masa depan yang lebih baik bagi
+            hewan-hewan yang membutuhkan rumah.
+          </p>
+          <p>
+            Banyak shelter telah bergabung dan berbagi data penting melalui
+            sistem kami. Kini saatnya bergerak bersama untuk mewujudkan adopsi
+            yang lebih mudah, transparan, dan aman bagi semua pihak.
+            <a href="lokasi-shelter.html"
+              >Lihat daftar shelter terpercaya kami disini.</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-section">
+      <div class="brand-text">𝓟𝓮𝓽 𝓢𝓪𝓿𝓮𝓻</div>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=61577318411619"
+          class="circle-icon fb"
+          ><img src="/images/fb.png" alt="Facebook"
+        /></a>
+        <a
+          href="https://www.instagram.com/petsaverss?igsh=cDR3ZnJqbzNiNHA3"
+          class="circle-icon ig"
+          ><img src="/images/ig.png" alt="Instagram"
+        /></a>
+      </div>
+    </div>
+
+    <section class="kenapa-pet-saver">
+      <div class="background-image"></div>
+      <div class="content">
+        <h2 class="section-title">Kenapa Harus <span>Pet Saver?</span></h2>
+        <div class="card-grid">
+          <div class="benefit-card">
+            <h3>Data Shelter Terlengkap</h3>
+            <p>
+              Menyediakan info shelter resmi & terpercaya di seluruh Indonesia.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3>Proses Adopsi Mudah</h3>
+            <p>Fitur adopsi online praktis tanpa ribet, cukup lewat website.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Dukung Shelter Lokal</h3>
+            <p>
+              Donasi langsung ke shelter-shelter yang terdaftar dan terpercaya.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3>Lokasi Shelter Akurat</h3>
+            <p>Petunjuk lokasi langsung terhubung ke Google Maps.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Update Data Real-Time</h3>
+            <p>Data hewan & shelter selalu diperbarui.</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Aman & Terpercaya</h3>
+            <p>
+              Semua shelter dan adopter diverifikasi demi keamanan hewan &
+              adopter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/trans putih.png" alt="Pet Saver Logo" />
+        </div>
+
+        <div class="footer-contact-group">
+          <div class="footer-contact-box">
+            <h4>Mailing Address</h4>
+            <p>
+              Jl. dr Soetomo<br />
+              Ds. Karangharjo, Kec. Glenmore<br />
+              Kab. Banyuwangi, Jawa Timur 68466
+            </p>
+          </div>
+          <div class="footer-contact-box">
+            <h4>Email</h4>
+            <p>projectpetsaver@gmail.com</p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=61577318411619"
+                target="_blank"
+              >
+                <img src="images/fb.png" alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/petsaverss" target="_blank">
+                <img src="images/ig.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© Pet Saver. All Rights Reserved. 2025.</div>
+      </div>
+    </footer>
+  </body>
+</html>

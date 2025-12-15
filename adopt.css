@@ -1,0 +1,255 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.main-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.donasi-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.donate-btn {
+  background-color: #EC8600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donate-btn:hover {
+  background-color: #EC8600;
+}
+
+/* Dog Cards */
+.dog-list {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;   /* ini bikin item ke tengah */
+  gap: 20px;                 /* jarak antar item */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.dog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+}
+
+.dog-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Biar kotak */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.adopt-btn {
+  background-color: #EC8600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.adopt-btn:hover {
+  background-color: #EC8600;
+}
+@media (max-width: 768px) {
+  .pet-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .pet-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.dog-list {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ukuran kotak fix min 200px */
+  gap: 20px;
+}
+
+.dog-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 300px; /* Kotak fix tinggi 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+}
+
+.dog-card img {
+  width: 100%;
+  height: 150px; /* Gambar fix tingginya */
+  object-fit: cover; /* Gambar akan 'nempel' & terpotong rapi jika perlu */
+  border-radius: 8px;
+}
+
+.adopt-btn {
+  background-color: #EC8600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.adopt-btn:hover {
+  background-color: #EC8600;
+}
+
+/* Cat Cards */
+.cat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* ini bikin item ke tengah */
+  gap: 20px;                 /* jarak antar item */
+  padding: 30px 20px;
+  max-width: 1200px;         /* batas lebar */
+  margin: 0 auto; 
+}
+
+.cat-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+.cat-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.cat-list {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ukuran kotak fix min 200px */
+  gap: 20px;
+}
+
+.cat-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 300px; /* Kotak fix tinggi 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+.cat-card img {
+  width: 100%;
+  height: 150px; /* Gambar fix tingginya */
+  object-fit: cover; /* Gambar akan 'nempel' & terpotong rapi jika perlu */
+  border-radius: 8px;
+}
+
+/* styles.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+h2 {
+  margin-bottom: 1em; /* jarak bawah antar paragraf */
+  line-height: 3
+;   /* spasi antar baris dalam paragraf */
+}

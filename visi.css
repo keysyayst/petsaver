@@ -1,0 +1,198 @@
+/* Umum */
+.container-visi {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container-visi h2 {
+  font-size: 32px;
+  color: #003b3b;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container-visi h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ec8600;
+  margin: 10px auto 30px auto;
+  border-radius: 3px;
+}
+
+.container-visi p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section khusus */
+.visi-section {
+  background-color: #fffefc;
+}
+
+.misi-section {
+  background-color: #fffefc;
+  color: #333;
+}
+
+.misi-section ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.misi-section li {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.kenapa-section {
+  background-color: #fff;
+}
+
+.tujuan-section {
+  background-color: #f7f7f7;
+}
+
+/* Grid Tujuan */
+.tujuan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.goal-item {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.goal-item img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.goal-item p {
+  font-size: 16px;
+  color: #003b3b;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-visi h2 {
+    font-size: 24px;
+  }
+
+  .container-visi p,
+  .misi-section li,
+  .goal-item p {
+    font-size: 16px;
+  }
+}
+
+.visi-misi-wrapper {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.visi-misi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* Kolom kiri: teks */
+.visi-misi-text {
+  flex: 1 1 60%;
+}
+
+.visi-misi-text h2 {
+  font-size: 32px;
+  color: #003b3b;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.visi-misi-text h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ec8600;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+
+.visi-misi-text h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #003b3b;
+}
+
+.visi-misi-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 10px;
+}
+
+.visi-misi-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.visi-misi-text li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Kolom kanan: logo */
+.visi-misi-logo {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.visi-misi-logo img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .visi-misi-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .visi-misi-text,
+  .visi-misi-logo {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .visi-misi-text ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}

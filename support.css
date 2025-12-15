@@ -1,0 +1,303 @@
+/* HERO BAGIAN ATAS */
+.donate-hero {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.donate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.donate-hero h1 {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #ec8600;
+  text-decoration: none;
+}
+
+/* KONTEN DONASI */
+.donate-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 30px;
+}
+
+.donate-text {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.donate-text h2 {
+  color: #000000;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.donate-text h3 {
+  font-size: 16px;
+  color: #ec8600ab;
+  margin-bottom: 10px;
+}
+
+.donate-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* GAMBAR SEBELAH KANAN (Ukuran 4x6) */
+.donate-image {
+  flex: 0 0 250px;
+  max-width: 250px;
+  aspect-ratio: 2 / 3; /* ratio 4x6 kira-kira */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.donate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .donate-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+  }
+
+  .donate-image {
+    flex: 0 0 200px;
+    max-width: 200px;
+    width: 200px;
+    aspect-ratio: 2 / 3;
+    margin: 20px auto;
+  }
+
+  .donate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .brand-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donate-text h2 {
+    font-size: 24px;
+  }
+
+  .donate-text p {
+    font-size: 14px;
+  }
+
+  .donation-card {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .icon-wrapper {
+    margin-right: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-content {
+    gap: 20px;
+    margin: 20px auto;
+  }
+
+  .donate-image {
+    flex: 0 0 180px;
+    max-width: 180px;
+    width: 180px;
+    aspect-ratio: 2 / 3;
+  }
+
+  .donate-text h2 {
+    font-size: 20px;
+  }
+
+  .donate-text h3 {
+    font-size: 14px;
+  }
+
+  .donate-text p {
+    font-size: 13px;
+  }
+
+  .donate-hero h1 {
+    font-size: 32px;
+  }
+
+  .donation-card {
+    max-width: 100%;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .icon-wrapper img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .donation-info h4 {
+    font-size: 14px;
+  }
+
+  .donation-info p {
+    font-size: 12px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+p {
+  margin-bottom: 1em; /* jarak bawah antar paragraf */
+  line-height: 1.6; /* spasi antar baris dalam paragraf */
+}
+.brand-social-container {
+  display: flex;
+  justify-content: space-between; /* biar text kiri, icon kanan */
+  align-items: center; /* sejajarin vertikal */
+  width: 100%; /* biar full lebar container */
+  padding: 10px 20px;
+}
+
+.brand-texts {
+  display: flex;
+  flex-direction: row; /* biar Pet Saver di atas Donate */
+  gap: 10px; /* jarak antara Pet Saver & Donate */
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.donate-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.donation-method {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.donation-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.icon-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.donation-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #003b3b;
+}
+
+.donation-info p {
+  margin: 5px 0 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.donation-info a {
+  color: #ec8600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.donation-info a:hover {
+  text-decoration: underline;
+}

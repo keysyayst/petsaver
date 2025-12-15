@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pusat Shelter Hewan Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="support.css">
+  <script src="script.js"></script>
+
+
+</head>
+<body>
+<!-- Tombol hamburger di luar header -->
+<button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+<header>
+  <!-- Sidebar Slide Menu -->
+  <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <a href="index.html">Home</a>
+    <a href="VisidanMisi.html">Visi dan Misi</a>
+    <a href="Pengembang.html">Pengembang</a>
+    <a href="Kontak.html">Kontak</a>
+    <a href="lokasi-shelter.html">Lokasi Shelter</a>
+    <a href="anjing.html">Adopsi Anjing</a>
+    <a href="kucing.html">Adopsi Kucing</a>
+    <a href="donasi.html">Donasi</a>
+  </div>
+
+  <div class="header-container">
+    <div class="logo">
+      <img src="images/transputih.png" alt="Logo" />
+      <span class="brand-text">Pet Saver</span>
+    </div>
+
+   <nav class="nav-desktop">
+  <!-- Home -->
+  <div class="dropdown">
+    <a href="index.html">Home</a>
+  </div>
+
+  <!-- Adopt -->
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggle">Adopt ▾</a>
+    <div class="dropdown-menu">
+      <a href="anjing.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Anjing
+      </a>
+      <a href="kucing.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Kucing
+      </a>
+    </div>
+  </div>
+
+  <!-- Explore -->
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggle">Explore ▾</a>
+    <div class="dropdown-menu">
+      <a href="lokasi-shelter.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Lokasi Shelter
+      </a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggle">About ▾</a>
+    <div class="dropdown-menu">
+      <a href="VisidanMisi.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Visi dan Misi
+      </a>
+      <a href="Pengembang.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Pengembang
+      </a>
+      <a href="Kontak.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Kontak
+      </a>
+    </div>
+  </div>
+
+  <!-- Support -->
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggle">Support ▾</a>
+    <div class="dropdown-menu">
+      <a href="donasi.html" class="dropdown-item">
+        <img src="images/dropdown.png" alt="icon"> Donasi
+      </a>
+    </div>
+  </div>
+</nav>
+
+  </div>
+</header>
+<!-- HERO (Bagian atas gambar persegi panjang) -->
+<section class="donate-hero">
+  <img src="images/background.png" alt="Header Donasi">
+  <div class="donate-overlay"></div>
+  <h1>Donasi</h1>
+</section>
+
+<!-- Donasi Content (Teks kiri, Gambar 4x6 kanan) -->
+<section class="donate-content">
+  <div class="donate-text">
+    <h3><i class="fas fa-star"></i> Donasi</h3>
+    <h2>Dukung Kerja Kami</h2>
+    <p><strong>Pet Saver didanai melalui hibah, sponsor, dan sumbangan.</strong></p>
+    <p></p>
+    <p>Donasi anda akan membantu mendukung Pet Saver. Kami mengandalkan kontribusi 
+        untuk menyediakan layanan berharga ini kepada organisasi penampungan hewan.</p>
+    <h4>Donasi melalui surat:</h4>
+    <p></p>
+    <p> Mulyoagung, Kec. Dau, Kabupaten Malang, Jawa Timur 65151</p>
+    <div class="brand-container">
+  <div class="brand-text">𝓟𝓮𝓽 𝓢𝓪𝓿𝓮𝓻</div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=61577318411619" class="circle-icon fb">
+      <img src="/images/fb.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/petsaverss?igsh=cDR3ZnJqbzNiNHA3" class="circle-icon ig">
+      <img src="/images/ig.png" alt="Instagram">
+    </a>
+  </div>
+</div>
+  </div>
+  <div class="donate-image">
+    <img src="images/QRgopay.jpg" alt="QR GoPay">
+  </div>
+  <div class="social-section">
+    
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="/images/trans putih.png" alt="Pet Saver Logo">
+    </div>
+
+    <div class="footer-contact-group">
+      <div class="footer-contact-box">
+        <h4>Mailing Address</h4>
+        <p>Jl. dr Soetomo<br> Ds. Karangharjo, Kec. Glenmore<br>Kab. Banyuwangi, Jawa Timur 68466</p>
+      </div>
+      <div class="footer-contact-box">
+        <h4>Email</h4>
+        <p>projectpetsaver@gmail.com</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61577318411619" target="_blank">
+            <img src="images/fb.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/petsaverss" target="_blank">
+            <img src="images/ig.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © Pet Saver. All Rights Reserved. 2025.
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

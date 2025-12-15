@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pusat Shelter Indonesia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="explore.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="maps.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Tombol hamburger di luar header -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+    <header>
+      <!-- Sidebar Slide Menu -->
+      <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <a href="index.html">Home</a>
+        <a href="VisidanMisi.html">Visi dan Misi</a>
+        <a href="Pengembang.html">Pengembang</a>
+        <a href="Kontak.html">Kontak</a>
+        <a href="lokasi-shelter.html">Lokasi Shelter</a>
+        <a href="anjing.html">Adopsi Anjing</a>
+        <a href="kucing.html">Adopsi Kucing</a>
+        <a href="donasi.html">Donasi</a>
+      </div>
+
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/transputih.png" alt="Logo" />
+          <span class="brand-text">Pet Saver</span>
+        </div>
+
+        <nav class="nav-desktop">
+          <!-- Home -->
+          <div class="dropdown">
+            <a href="index.html">Home</a>
+          </div>
+
+          <!-- Adopt -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Adopt ▾</a>
+            <div class="dropdown-menu">
+              <a href="anjing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Anjing
+              </a>
+              <a href="kucing.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kucing
+              </a>
+            </div>
+          </div>
+
+          <!-- Explore -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Explore ▾</a>
+            <div class="dropdown-menu">
+              <a href="lokasi-shelter.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Lokasi Shelter
+              </a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About ▾</a>
+            <div class="dropdown-menu">
+              <a href="VisidanMisi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Visi dan Misi
+              </a>
+              <a href="Pengembang.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Pengembang
+              </a>
+              <a href="Kontak.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Kontak
+              </a>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Support ▾</a>
+            <div class="dropdown-menu">
+              <a href="donasi.html" class="dropdown-item">
+                <img src="images/dropdown.png" alt="icon" /> Donasi
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="map-section">
+      <h2>Lokasi Shelter</h2>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <section class="recommend-section">
+      <h2 class="recommend-title">Daftar Shelter</h2>
+      <div class="recommend-container">
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/vzE3EE2YkXY8J6f66', '_blank')"
+        >
+          <h3>Nitha Cat House Surabaya</h3>
+          <p>Shelter khusus kucing terpercaya di Surabaya.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/yix4SKF5MVWempLN7', '_blank')"
+        >
+          <h3>JAAN (Jakarta Animal Aid Network)</h3>
+          <p>NGO rescue & adopsi hewan ternama di Jakarta.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://g.co/kgs/oAXQf35', '_blank')"
+        >
+          <h3>Pejaten Shelter</h3>
+          <p>Salah satu shelter adopsi tertua di Jakarta Selatan.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/kJN6x81sK5Nu1oMT6', '_blank')"
+        >
+          <h3>Adopsi Kucing Free</h3>
+          <p>Lokasi adopsi kucing gratis, cocok untuk adopter pemula.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://g.co/kgs/sJ6mhwa', '_blank')"
+        >
+          <h3>Ragunan Zoo</h3>
+          <p>
+            Kebun binatang terbesar di Jakarta, edukasi dan konservasi hewan.
+          </p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/kfXq6moR31C4XhxS9', '_blank')"
+        >
+          <h3>Surabaya Paw Center</h3>
+          <p>Pusat penyelamatan dan adopsi hewan jalanan di Surabaya.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/4hZRPydgtstF93Db9', '_blank')"
+        >
+          <h3>PoodleGuguk</h3>
+          <p>Shelter khusus anjing ras Poodle, perawatan intensif.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/S5Z91MTbx8PPuAEx8', '_blank')"
+        >
+          <h3>PetGround Surabaya</h3>
+          <p>Shelter modern lengkap dengan kolam renang hewan & klinik.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/D8WDoAwp976hC5BF9', '_blank')"
+        >
+          <h3>Bandung Pet Care</h3>
+          <p>Shelter hewan sehat dan terlatih di Bandung.</p>
+        </div>
+        <div
+          class="recommend-card"
+          onclick="window.open('https://maps.app.goo.gl/QyCGKmkysCS538UY6', '_blank')"
+        >
+          <h3>Bandung Zoo</h3>
+          <p>Kebun binatang Bandung, pusat konservasi lokal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/trans putih.png" alt="Pet Saver Logo" />
+        </div>
+
+        <div class="footer-contact-group">
+          <div class="footer-contact-box">
+            <h4>Mailing Address</h4>
+            <p>
+              Jl. dr Soetomo<br />
+              Ds. Karangharjo, Kec. Glenmore<br />Kab. Banyuwangi, Jawa Timur
+              68466
+            </p>
+          </div>
+          <div class="footer-contact-box">
+            <h4>Email</h4>
+            <p>projectpetsaver@gmail.com</p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=61577318411619"
+                target="_blank"
+              >
+                <img src="images/fb.png" alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/petsaverss" target="_blank">
+                <img src="images/ig.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© Pet Saver. All Rights Reserved. 2025.</div>
+      </div>
+    </footer>
+
+    <div class="floating-banner" id="floatingBanner">
+      <button
+        class="close-banner"
+        onclick="document.getElementById('floatingBanner').style.display='none'"
+      >
+        ×
+      </button>
+      <img src="images/shelterwhy.png" alt="Pet Ad Banner" />
+      <p>Yuk adopsi hewan & ubah hidup mereka 💛</p>
+      <a href="anjing.html" class="banner-btn">Lihat Anjing</a>
+    </div>
+  </body>
+</html>
